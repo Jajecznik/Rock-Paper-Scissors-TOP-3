@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+h1 {
+    padding: 32px 0;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px 0 64px 0;
+}
+
+.btn {
+    width: 200px;
+    height: 200px;
+    margin: 16px 32px;
+    border-radius: 50%;
+    background-size: cover;
+    color: white;
+    font-size: 32px;
+    text-shadow: 1px 1px 10px black;
+    font-weight: bold;
+    border: 3px solid #b69870;
+    transition: transform 0.4s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+button.rock {
+    background-image: url('images/rock.jpg');
+}
+
+button.paper {
+    background-image: url('images/paper.jpg');
+}
+
+button.scissors {
+    background-image: url('images/scissors.jpg');
+}
+
+.round-result {
+    font-size: 32px;
+}
+
+.game-result {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.play-again {
+    margin: 64px 0;
+    padding: 32px;
+    font-size: 48px;
+    border-radius: 12px;
+    border: 3px solid #b69870;
+    background-color: aliceblue;
+}
+
+.play-again:hover {
+    cursor: pointer;
+    background-color: azure
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    padding: 64px 0 8px 0;
+    text-align: center;
+}
+
+footer span {
+    font-weight: bold;
+}
